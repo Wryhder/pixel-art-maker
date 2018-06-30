@@ -38,3 +38,19 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+.center {
+    margin: auto;
+}
+
+.designCanvas {
+    margin-top: 1.5em;
+    padding: 1em;
+    width: 60%;
+    border: 30px solid olive;
+    border-right-color: lightblue;
+}
+
+.designCanvas * {
+    background-color: white;
+}

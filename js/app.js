@@ -1,11 +1,8 @@
-// Select color input
-// Select size input
-
 // When size is submitted by the user, call makeGrid()
-
 $('#sizePicker').submit(function makeGrid(event1) {
     $('table tr').remove();
 
+    // Select size input
     var rows = $('#inputHeight').val();
     var cols = $('#inputWeight').val();
 
@@ -20,6 +17,7 @@ $('#sizePicker').submit(function makeGrid(event1) {
     event1.preventDefault();
 
     $('.cell').click((event2) => {
+        // Select color input
         var color = $('#colorPicker').val();
         $(event2.target).css('background-color', color);
     })

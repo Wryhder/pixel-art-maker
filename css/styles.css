@@ -2,6 +2,8 @@ body {
     text-align: center;
 }
 
+/* Headings */
+
 h1 {
     font-family: Monoton;
     font-size: 70px;
@@ -15,6 +17,8 @@ h2 {
 h2:first-of-type {
     margin-top: 0.5em;
 }
+
+/* Table */
 
 table,
 tr,
@@ -35,9 +39,13 @@ td {
     width: 20px;
 }
 
+/* Form */
+
 input[type=number] {
     width: 6em;
 }
+
+/* Div */
 
 .center {
     margin: auto;

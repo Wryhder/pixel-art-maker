@@ -1,10 +1,12 @@
+let rows, cols, i, pickedColor;
+
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function makeGrid(event1) {
     $('table tr').remove();
 
     // Select size input
-    var rows = $('#inputHeight').val();
-    var cols = $('#inputWeight').val();
+    rows = $('#inputHeight').val();
+    cols = $('#inputWeight').val();
 
     for (let i = 1; i <= rows; i++) {
         $('table').append('<tr></tr>');
@@ -23,7 +25,7 @@ $('#sizePicker').submit(function makeGrid(event1) {
         $("#colour-toggle-tip").css("color", "rgb(147, 166, 184)");
 
         // Select color input
-        let pickedColor = $('#colorPicker').val();
+        pickedColor = $('#colorPicker').val();
 
         if($(event2.target).attr('style')){
             $(event2.target).removeAttr('style');

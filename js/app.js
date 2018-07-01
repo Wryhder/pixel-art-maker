@@ -21,7 +21,6 @@ $('#sizePicker').submit(function makeGrid(event1) {
 
     // toggle colour of usage instructions
     $("#create-grid").css("color", "rgb(147, 166, 184)");
-    $("#colour-toggle-tip").css("color", "firebrick");
 
     $('.cell').click((event2) => {
         $("#colour-toggle-tip").css("color", "rgb(147, 166, 184)");

@@ -38,8 +38,7 @@ $('#sizePicker').submit(function makeGrid(event1) {
 
     $("input:reset").click(function() {
         $('table tr').remove();
-        $("#create-grid").css("color", "firebrick");
-        $("#colour-toggle-tip").show();
+        $("#create-grid, #colour-toggle-tip").css("color", "firebrick");
     })
 
 });

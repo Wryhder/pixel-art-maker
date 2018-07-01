@@ -16,6 +16,8 @@ $('#sizePicker').submit(function makeGrid(event1) {
 
     event1.preventDefault();
 
+    // make usage instruction less distracting
+    // once user has submitted table size
     $("#create-grid").css("color", "rgb(147, 166, 184)")
 
     $('.cell').click((event2) => {

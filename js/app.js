@@ -20,7 +20,10 @@ $('#sizePicker').submit(function makeGrid(event1) {
     // once user has submitted table size
     $("#create-grid").css("color", "rgb(147, 166, 184)")
 
+    $("#colour-toggle-tip").show();
+
     $('.cell').click((event2) => {
+        $("#colour-toggle-tip").hide();
 
         // Select color input
         let pickedColor = $('#colorPicker').val();
@@ -30,6 +33,7 @@ $('#sizePicker').submit(function makeGrid(event1) {
         } else {
             $(event2.target).attr('style', 'background-color: ' + pickedColor) ;
         }  
+        $("#colour-toggle-tip").show();
     })
 });
 

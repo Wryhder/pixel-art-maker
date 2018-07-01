@@ -19,7 +19,7 @@ $('#sizePicker').submit(function makeGrid(event1) {
     // make usage instruction less distracting
     // once user has submitted table size
     $("#create-grid").css("color", "rgb(147, 166, 184)");
-
+    
     $("#colour-toggle-tip").show();
 
     $('.cell').click((event2) => {
@@ -34,7 +34,12 @@ $('#sizePicker').submit(function makeGrid(event1) {
             $(event2.target).attr('style', 'background-color: ' + pickedColor) ;
         }  
     });
+
+    $("input:reset").click(function() {
+        $('table tr').remove();
+        $("#create-grid").css("color", "firebrick");
         $("#colour-toggle-tip").show();
     })
+
 });
 

@@ -51,6 +51,16 @@ input[type=number] {
     margin: auto;
 }
 
+.italicized-red {
+    font-style: italic;
+    color: firebrick;
+}
+
+.bold {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
 .designCanvas {
     margin-top: 1.5em;
     padding: 1em;

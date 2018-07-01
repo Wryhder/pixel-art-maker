@@ -19,11 +19,11 @@ $('#sizePicker').submit(function makeGrid(event1) {
     // make usage instruction less distracting
     // once user has submitted table size
     $("#create-grid").css("color", "rgb(147, 166, 184)");
-    
-    $("#colour-toggle-tip").show();
+
+    $("#colour-toggle-tip").css("color", "firebrick");
 
     $('.cell').click((event2) => {
-        $("#colour-toggle-tip").hide();
+        $("#colour-toggle-tip").css("color", "rgb(147, 166, 184)");
 
         // Select color input
         let pickedColor = $('#colorPicker').val();

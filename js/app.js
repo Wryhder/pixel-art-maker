@@ -17,9 +17,15 @@ $('#sizePicker').submit(function makeGrid(event1) {
     event1.preventDefault();
 
     $('.cell').click((event2) => {
+
         // Select color input
-        var color = $('#colorPicker').val();
-        $(event2.target).css('background-color', color);
+        let pickedColor = $('#colorPicker').val();
+
+        if($(event2.target).attr('style')){
+            $(event2.target).removeAttr('style');
+        } else {
+            $(event2.target).attr('style', 'background-color: ' + pickedColor) ;
+        }  
     })
 });
 

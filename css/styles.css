@@ -72,3 +72,8 @@ input[type=number] {
 .designCanvas * {
     background-color: white;
 }
+
+#create-grid,
+#colour-toggle-tip {
+    transition: color .5s;
+}

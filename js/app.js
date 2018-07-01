@@ -8,12 +8,14 @@ $('#sizePicker').submit(function makeGrid(event1) {
     rows = $('#inputHeight').val();
     cols = $('#inputWeight').val();
 
-    for (let i = 1; i <= rows; i++) {
+    i = 1;
+    while (i <= rows) {
         $('table').append('<tr></tr>');
         for (let j = 1; j <= cols; j++) {
             $('tr:last').append('<td></td>');
             $('td').attr("class", "cell");
         }
+        i++;
     }
     event1.preventDefault();
 
